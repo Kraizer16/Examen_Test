@@ -114,13 +114,13 @@ async function agregarTareaDOM(id, texto, descripcionn,  fechauno, fechados) {
             li.setAttribute("draggable", true)
         
             const span1 = document.createElement("span");
-            span1.textContent = texto;
+            span1.textContent = "Titulo: " + texto;
             const span2 = document.createElement("span");
-            span2.textContent = descripcionn;
+            span2.textContent = "Descripción: " + descripcionn;
             const span3 = document.createElement("span");
-            span3.textContent = fechauno;
+            span3.textContent = "Fecha De Inicio: " + fechauno;
             const span4 = document.createElement("span");
-            span4.textContent = fechados;
+            span4.textContent = "Fecha de Fin: " + fechados;
 
         
             const botones = document.createElement("div");
@@ -163,13 +163,13 @@ async function agregarTareaDOM(id, texto, descripcionn,  fechauno, fechados) {
             li.setAttribute("draggable", true)
         
             const span1 = document.createElement("span");
-            span1.textContent = texto;
+            span1.textContent = "Titulo: " + texto;
             const span2 = document.createElement("span");
-            span2.textContent = descripcionn;
+            span2.textContent = "Descripción: " + descripcionn;
             const span3 = document.createElement("span");
-            span3.textContent = fechauno;
+            span3.textContent = "Fecha De Inicio: " + fechauno;
             const span4 = document.createElement("span");
-            span4.textContent = fechados;
+            span4.textContent = "Fecha de Fin: " + fechados;
         
             const botones = document.createElement("div");
             botones.className = "flex gap-2";
@@ -210,13 +210,13 @@ async function agregarTareaDOM(id, texto, descripcionn,  fechauno, fechados) {
             li.setAttribute("draggable", true)
         
             const span1 = document.createElement("span");
-            span1.textContent = texto;
+            span1.textContent = "Titulo: " + texto;
             const span2 = document.createElement("span");
-            span2.textContent = descripcionn;
+            span2.textContent = "Descripción: " + descripcionn;
             const span3 = document.createElement("span");
-            span3.textContent = fechauno;
+            span3.textContent = "Fecha De Inicio: " + fechauno;
             const span4 = document.createElement("span");
-            span4.textContent = fechados;
+            span4.textContent = "Fecha de Fin: " + fechados;
         
             const botones = document.createElement("div");
             botones.className = "flex gap-2";

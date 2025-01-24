@@ -7,6 +7,14 @@
       "fechaFin": "2025-01-18",
       "estado": "En Progreso",
       "id": 1
+    },
+    {
+      "texto": "Marlon debe comer",
+      "descripcion": "Marlon debe prepararse su comida y almorzar correctamente",
+      "fechaInicio": "2025-01-26",
+      "fechaFin": "2025-02-01",
+      "estado": "Pendientes",
+      "id": 2
     }
   ]
 }
