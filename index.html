@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tareas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex items-start justify-center min-h-screen">
+    <main class="bg-white p-6 rounded-lg shadow-md  w-full">
+        <section class="text-center flex justify-center">
+            <form id="formularioTareas" class="formulario justify-center">
+                <label class="block font-bold text-1xl" for="tarea">Titulo: </label>
+                <input
+                    class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 mt-2 mb-2"
+                    type="text" id="tarea" placeholder="Ingrese el Titulo" required>
+
+
+                <label class="block font-bold text-1xl" for="Descripción">Descripción: </label>
+                <input
+                    class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 mt-2 mb-2"
+                    type="text" id="Descripción" placeholder="Descripción corta de su tarea" required>
+
+
+                <label class="block font-bold text-1xl" for="fechaInicio">Fecha de inicio: </label>
+                <input
+                    class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 mt-2 mb-2"
+                    type="date" id="fechaInicio" placeholder="Ingrese la fecha de inicio" required>
+
+
+                <label class="block font-bold text-1xl" for="fechaFin">Fecha de Fin: </label>
+                <input
+                    class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 mt-2 mb-2"
+                    type="date" id="fechaFin" required>
+
+
+                <label for="estado" class="block font-bold text-1xl">Seleccione un estado de su tarea: </label>
+                <select required id="estado"
+                    class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 mt-2">
+                    <option value="Pendientes">Pendientes</option>
+                    <option value="En Progreso">En progreso</option>
+                    <option value="Completada">Completadas</option>
+                </select>
+                <input
+                    class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 mt-2 mb-2"
+                    type="text" id="value" readonly>
+
+
+                <div class="flex justify-center ">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-4 mt-4 rounded"
+                        type="submit">Crear Tarea</button>
+                </div>
+            </form>
+        </section>
+        <section class="mt-9">
+            <header class="text-4xl font-bold text-center pb-4 mb-5">Mis Tareas</header>
+            <div class="flex justify-around text-center">
+                <div class="flex flex-col justify-center items-center border p-2 shadow-md" id="listaPendientes">
+                    <h1 class="block font-bold text-2xl">Pendientes</h1>
+                </div>
+                <div class="flex flex-col justify-center items-center border p-2 shadow-md" id="listaProgreso">
+                    <h1 class="block font-bold text-2xl">En progreso</h1>
+                </div>
+                <div class="flex flex-col justify-center items-center border p-2 shadow-md" id="listaCompletadas">
+                    <h1 class="block font-bold text-2xl">Completadas</h1>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="./js/tareas.js"></script>
+
+</html>

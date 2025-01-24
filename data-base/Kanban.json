@@ -1,0 +1,12 @@
+{
+  "posts": [
+    {
+      "texto": "Marlon debe comer",
+      "descripcion": "Marlon debe prepararse su comida y almorzar correctamente",
+      "fechaInicio": "2025-01-25",
+      "fechaFin": "2025-01-18",
+      "estado": "En Progreso",
+      "id": 1
+    }
+  ]
+}
